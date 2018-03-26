@@ -54,9 +54,10 @@ namespace ChatterBox
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            app.UseFacebookAuthentication(
-               appId: "156959711790554",
-               appSecret: "ce5d32c41143830ed37094590ec24a1b");
+            ////Not working
+            //app.UseFacebookAuthentication(
+            //   appId: "156959711790554",
+            //   appSecret: "ce5d32c41143830ed37094590ec24a1b");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
