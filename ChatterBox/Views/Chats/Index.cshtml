@@ -15,15 +15,20 @@
 
 @section Scripts {
     <script>
+        ////Connection Test
+        //alert("hello world!");
+
         //// JSON ... Javascript object
-        //var jsonTest = { "ID": 1; "userID": 1, "Message": "Hello World" };
+        //var jsonTest = { "ID": 1, "userID": 1, "Message": "Hello World" };
         ////now some jQuery
         //$("#response").text(jsonTest.Message);
 
-        var jsonTest = {"firstName" : "Bob", "lastName": "Sauce", "children" : [{"firstName" : "Barbie", "age": 19},{"firstName" : "Ron", "age": null }] }
-
+        // JSON ... Javascript object
+        var jsonTest = { "firstName": "Bob", "lastName": "Sauce", "children": [{ "firstName": "Barbie", "age": 19 }, { "firstName": "Ron", "age": null }] }
         //now some jQuery
-        $("#response").text(jsonTest.children[1].forName);
+        $("#response").text(jsonTest.children[1].firstName);
+
+
 
 
     </script>
